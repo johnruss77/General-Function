@@ -1,0 +1,30 @@
+#===================================================
+General functions - created by John Russell Jan 2012
+#===================================================
+
+option_list:
+
+Creates a drop down selection list with values pulled from a database column (with sql query passed in as a parameter).  Connection to db must already be established earlier in your code
+
+usage of this function would be - 
+
+option_list("<field_name>","<SQL Query>","<db column value selected">,"<db column value displayed>")
+
+eg:
+
+option_list("this_department_list_field", "SELECT * FROM departments ORDER BY name ASC", "id", "name");
+
+
+
+option_radio:
+
+Creates radio button option list with values pulled from a database column (with sql query passed in as a parameter).  Connection to db must already be established earlier in your code
+
+usage of this function would be - 
+
+option_radio("<field_name>","<SQL Query>","<db column value selected">,"<db column value displayed>")
+
+eg:
+
+option_radio("this_department_radio_field", "SELECT * FROM departments ORDER BY name ASC", "id", "name");
+
